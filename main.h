@@ -5,9 +5,12 @@
 #include <stdlib.h>
 #include <stdarg,h>
 
-/* Funciones para imprimir */
+/* Funciones auxiliares */
 
 int _putchar(char c);
+
+/* Funciones para imprimir */
+
 int _printf(const char *format, ...);
 
 #endif
