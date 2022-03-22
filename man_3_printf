@@ -4,7 +4,7 @@
 .PP
 _printf
 
-.SH SYNOSIS
+.SH SYNOPSIS
 
 .IP
 - #include main.h
