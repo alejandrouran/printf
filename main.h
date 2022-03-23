@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdarg,h>
+#include <stdarg.h>
 
 /* Funciones auxiliares */
 
@@ -13,5 +13,6 @@ int _putchar(char c);
 
 int _printf(const char *format, ...);
 char *print_s(va_list list);
+char *print_c(va_list list);
 
 #endif
