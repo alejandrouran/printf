@@ -13,7 +13,7 @@ char *print_c(va_list list)
 		c = '\0';
 	}
 
-	s = malloc(sizeof(char) + 1);
+	s = malloc(sizeof(char) * 2);
 
 	if (s == NULL)
 	{
