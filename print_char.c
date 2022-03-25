@@ -1,27 +1,17 @@
-#include <stdio.h>
 #include "main.h"
 
-char *print_c(va_list list)
+/**
+ * print_char - print c
+ * @arg: va_list
+ * Return: char
+ */
+int print_char(va_list arg)
 {
-	char *s;
-	char c;
+	int i = 0;
 
-	c = va_arg(list, int);
+	i = va_arg(arg, int);
 
-	if (c == 0)
-	{
-		c = '\0';
-	}
+	_putchar(i);
 
-	s = malloc(sizeof(char) * 2);
-
-	if (s == NULL)
-	{
-		return (NULL);
-	}
-
-	s[0] = c;
-	s[1] = '\0';
-
-	return (s);
+	return (1);
 }
