@@ -24,9 +24,8 @@ int print_int(va_list arg)
 		n = i;
 	}
 	while (n / d > 9)
-	{
+
 		d = d * 10;
-	}
 
 	while (d != 0)
 	{
@@ -35,5 +34,5 @@ int print_int(va_list arg)
 		n = n % d;
 		d = d / 10;
 	}
-	return (1);
+	return (l);
 }
