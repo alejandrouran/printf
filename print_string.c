@@ -1,33 +1,24 @@
-#include <stdio.h>
 #include "main.h"
 
-char *print_s(va_list list)
+/**
+ * print_string - print s
+ * @arg: va_list
+ * Return: string
+ */
+int print_string(va_list arg)
 {
 	char *s;
-	char *p;
-	int len;
+	int i = 0;
 
-	s = va_arg(list, char *);
-
+	s = va_arg(arg, char *);
 	if (s == NULL)
 	{
-		s = "(void)";
+		s = "(null)";
 	}
-
-	if (p == NULL)
+	for (; *s; s++)
 	{
-		return (NULL);
+		putchar(*s);
+		i++;
 	}
-
-	len = 0;
-
-	p = malloc(sizeof(char) * len + 1);
-
-	while (s[len] != '\0')
-	{
-		p[len] = s[len];
-		len++;
-	}
-
-	return (p);
+	return (i);
 }
