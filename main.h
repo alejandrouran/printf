@@ -12,7 +12,8 @@ int _putchar(char c);
 /* Funciones para imprimir */
 
 int _printf(const char *format, ...);
-char *print_s(va_list list);
-char *print_c(va_list list);
+int print_string(va_list arg);
+int print_char(va_list arg);
+int print_int(va_list arg);
 
 #endif
