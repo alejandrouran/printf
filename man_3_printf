@@ -1,7 +1,8 @@
 .TH _PRINTF "March 2022" "1.0" "man_3_printf" "Holberton School"
 
 .SH NAME
-.PP
+.P
+
 _printf
 
 .SH SYNOPSIS
@@ -81,3 +82,5 @@ No bugs found
 .PP
 
 #SEE ALSO
+
+print (3)
