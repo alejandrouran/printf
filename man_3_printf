@@ -1,86 +1,85 @@
-.TH _PRINTF "March 2022" "1.0" "man_3_printf" "Holberton School"
+_PRINTF "March 2022" "1.0" "man_3_printf" "Holberton School"
 
-.SH NAME
-.P
+# NAME
 
 _printf
 
-.SH SYNOPSIS
+# SYNOPSIS
 
-.IP
+
 - #include main.h
-.IP
-- #include <stdio.h>
-.IP
-- #include <stdlib.h>
-.IP
-- #include <stdarg,h>
-.PP
 
-int _printf(const char *format, \&...);
-.PP
+- #include <stdio.h>
+
+- #include <stdlib.h>
+
+- #include <stdarg,h>
+
+int _printf(const char *format, ...);
 
 int _putchar(char c);
-.PP
 
-char *print_c(va_list list);
+int print_string(va_list arg);
 
-.SH DESCRIPTION
+int print_char(va_list arg);
 
-.PP
-_printf is a program written in C language, it has a functionthat
+int print_int(va_list arg);
+
+
+# DESCRIPTION
+
+
+_printf is a program written in C language, it has a function that
 produces an output according to a format.
+
 This returns the number of characters printed excluding the null byte
 that it uses to end the string output.
+
 The format is a character string.
 the format string is made up of zero plus directives.
 
-.PP
 va_list - parameters.
 va_start - macro that receives the parameters and receives a format to
 tell it how many parameters.
 va_end - macro that receives the parameters.
 
-.PP
 for - go to format to get the parameters
-.PP
-va_arg: to get the parameters va_arg: data type parameters
-.PP
+
+va_arg: to get the parameters va_arg: data type parameters.
+
+
 Compilator:
-.PP
-$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 \f[I].c gcc -Wall
--Wextra -Werror -pedantic -std=gnu89 -Wno-format \f[R].c
-.PP
-#OPTIONS
-.PP
+
+
+$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
+gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
+
+
+# OPTIONS
+
+
 Conversion specifiers:
-.PP
+
 %c: Print a single character.
-.PP
+
 %s: Print a string of characters.
-.PP
+
 %d: Print a decimal number.
-.PP
-%i: print an integer
-.PP
 
-#EXAMPLES
+%i:  print an integer.
 
-.SH AUTHORS
 
-.PP
+# AUTHORS
+
+
 Alejandro Uran and Mateo Villada
 
-.PP
+# BUGS
 
-#BUGS
-
-.PP
 
 No bugs found
 
-.PP
+# SEE ALSO
 
-#SEE ALSO
 
 print (3)
