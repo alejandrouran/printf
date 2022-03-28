@@ -18,6 +18,7 @@ operators, which determine what printf does with its arguments:
 **Code**	**Format**
 
 %c 		character
+
 %d 		signed integers
 %i 		signed integers
 %e 		scientific notation, with a lowercase "e"
