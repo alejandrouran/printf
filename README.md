@@ -15,21 +15,20 @@ printf(). For example, this code
 operators, which determine what printf does with its arguments:
 % - print a single % character
 
-Code Format
-%c character
-%d signed integers
-%i signed integers
-%e scientific notation, with a lowercase "e"
-%E scientific notation, with a uppercase "E"
-%f floating point
-%g use %e or %f, whichever is shorter
-%G use %E or %f, whichever is shorter
-%o octal
-%s a string of characters
-%u unsigned integer
-%x unsigned hexadecimal, with lowercase letters
-%X unsigned hexadecimal, with uppercase letters
-%p a pointer
-%n the argument shall be a pointer to an integer into which is placed the number of characters
-written so far
-%% a '%' sign
+####Code	Format
+%c 		character
+%d 		signed integers
+%i 		signed integers
+%e 		scientific notation, with a lowercase "e"
+%E 		scientific notation, with a uppercase "E"
+%f 		floating point
+%g 		use %e or %f, whichever is shorter
+%G 		use %E or %f, whichever is shorter
+%o 		octal
+%s 		a string of characters
+%u 		unsigned integer
+%x 		unsigned hexadecimal, with lowercase letters
+%X 		unsigned hexadecimal, with uppercase letters
+%p 		a pointer
+%n 		the argument shall be a pointer to an integer into which is placed the number of characters written so far
+%% 		a '%' sign
