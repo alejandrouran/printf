@@ -16,6 +16,7 @@ operators, which determine what printf does with its arguments:
 % - print a single % character
 
 **Code**	**Format**
+
 %c 		character
 %d 		signed integers
 %i 		signed integers
